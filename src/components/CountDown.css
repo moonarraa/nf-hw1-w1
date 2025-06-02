@@ -1,14 +1,12 @@
-
 .main-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    justify-content: center;      
-    min-height: 100vh;            
-    padding: 20px;            
-    box-sizing: border-box;
-  }
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .timer-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -30,6 +28,20 @@
 .input-name:disabled {
     background-color: #e0e0e0;
   }
+
+.time-select {
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.time-select:disabled {
+  background-color: #e0e0e0;
+}
   
 .btn {
     padding: 10px 20px;
@@ -64,6 +76,16 @@
 .btn-reset:hover {
     background-color: #c82333;   
   }
+
+.btn-toggle {
+    background-color: #3e94e4;
+    align-self: flex-end;   
+    margin-bottom: 8px;
+  }
+
+.btn-toggle:hover {
+    background-color: #2b6cb0;
+  }
   
 .time-text {
     font-size: 2rem;
@@ -78,7 +100,6 @@
     color: #1c7430; 
     margin: 20px 0;
   }
-  
 
 .run-count {
     font-size: 1rem;
@@ -98,7 +119,7 @@
 .progress-bar {
     height: 100%;
     background-color: #3498db;
-    width: 0%; /* Будет устанавливаться динамически */
+    width: 0%;
     transition: width 1s linear;
   }
 
@@ -109,4 +130,31 @@
     font-style: italic;
     text-align: center;
     max-width: 300px;
+  }
+
+body.dark-theme .input-name,
+body.dark-theme .time-select {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    color: #e2e8f0;
+  }
+
+body.dark-theme .timer-title {
+    color: #e2e8f0;
+  }
+
+body.dark-theme .time-text {
+    color: #a0aec0;
+  }
+
+body.dark-theme .finish-text {
+    color: #9ae6b4;
+  }
+
+body.dark-theme .quote-text {
+    color: #cbd5e0;
+  }
+
+body.dark-theme .run-count {
+    color: #cbd5e0;
   }

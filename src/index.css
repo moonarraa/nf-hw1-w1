@@ -9,10 +9,21 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.light-theme {
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #eee;
 }
 
 h1 {
