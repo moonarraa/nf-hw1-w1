@@ -1,0 +1,112 @@
+
+.main-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center;      
+    min-height: 100vh;            
+    padding: 20px;            
+    box-sizing: border-box;
+  }
+  
+.timer-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+.input-name {
+    width: 260px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    outline: none;
+  }
+  
+.input-name:disabled {
+    background-color: #e0e0e0;
+  }
+  
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+  }
+  
+.btn-start {
+    background-color: #28a745;    
+    color: white;
+  }
+  
+.btn-start:disabled {
+    background-color: #92d7a5;       
+  }
+  
+.btn-start:hover:not(:disabled) {
+    background-color: #218838;       
+  }
+  
+.btn-reset {
+    background-color: #dc3545;       
+    color: white;
+  }
+  
+.btn-reset:hover {
+    background-color: #c82333;   
+  }
+  
+.time-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 20px 0;
+  }
+  
+.finish-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1c7430; 
+    margin: 20px 0;
+  }
+  
+
+.run-count {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-top: 10px;
+  }
+
+.progress-container {
+    width: 300px;
+    height: 12px;
+    background-color: #dce1e6;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+
+.progress-bar {
+    height: 100%;
+    background-color: #3498db;
+    width: 0%; /* Будет устанавливаться динамически */
+    transition: width 1s linear;
+  }
+
+.quote-text {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-top: 15px;
+    font-style: italic;
+    text-align: center;
+    max-width: 300px;
+  }
